@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Positioning</title>
+    <head>
+      <style>
+        .parent {
+          height: 200%;
+          background-color: lightcoral;
+
+          /* == 2. Absolute Positioning == */
+          /* margin: 100px; */
+          /* 2a. position: relative; */
+        }
+
+        .child {
+          border: 5px solid black;
+          /* 1. Why doesn't the top property do anything? */
+          top: 5%;
+          padding: 2%;
+
+          /* == 2. Absolute Positioning == */
+          /* position: absolute;
+          top: 50px;
+          left: 50px; */
+
+          /* == 3. Fixed Positioning == */
+          position: fixed;
+          height: 30%; 
+
+          /* == 4. Sticky Positioning == */
+          position: sticky;
+        }
+
+      </style>
+    </head>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- 1. Relative Position -->
+      <!-- <div class="child" style="position: relative; top: 50px;"> -->
+        <div class="child">
+        <h1>Hello, I am a div!</h1> 
+      </div>
+      <div class="child">
+        <h1>Hello, I am another div!</h1>
+      </div>
+    </div>
+    
+  </body>
+</html>
