@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Flexbox!</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      .page {
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .menu {
+        width: 100%;
+        height: 10%;
+        background-color: lightcoral;
+        border: 3px solid black;
+
+        /* align-self: flex-start; */
+      }
+
+      .content {
+        width: 100%;
+        height: 80%;
+
+        /* align-self: flex-start; */
+        display: flex;
+        flex-wrap: wrap;
+
+
+
+
+
+
+
+
+
+
+        justify-content: space-between;
+        /* align-content: flex-end; */
+        align-items:center;
+        /* flex-direction: column; */
+
+        overflow: auto;
+      }
+
+      .footer {
+        width: 100%;
+        height: 10%;
+        background-color: lightcoral;
+        border: 3px solid black;
+
+        align-self: flex-end;
+      }
+
+      .item {
+        border: 1px solid darkgray;
+      }
+
+      .content > .item {
+        background-color: lightseagreen;
+        width: 25%;
+        height: 33vh;
+
+        /* flex-grow: 1; */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="menu">
+        <div class="item">Sign In</div>
+        <div class="item">Sign Up</div>
+        <div class="item">Homepage</div>
+      </div>
+
+      <div class="content">
+        <div class="item">Welcome to NEXT</div>
+        <div class="item">This is content</div>
+        <div class="item" >The meaning of life is 42</div>
+        <div class="item" style="height: 40%;">SCSSy Aren't You?</div>
+        <div class="item">Why did the developer lose his job?</div>
+        <div class="item">He couldn't C# :(</div>
+  
+      </div>
+
+      <div class="footer">
+        <div class="item">Contact Us</div>
+        <div class="item">Return Policy</div>
+      </div>
+    </div>
+  </body>
+</html>
